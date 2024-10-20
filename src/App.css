@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+/********** Style ********/
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+
+:root {
+  --primary-white: #F4E0CA;
+  --primary-peach: #E5A665;
+  --primary-dark: #182E35;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Body styling */
+body {
+  font-family: "Esteban", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Logo styling */
+.logo {
+  width: 200px; /* Default width for larger screens */
+}
+
+/* Responsive logo for smaller screens */
+@media (max-width: 576px) {
+  .logo {
+    width: 150px; /* Smaller width for narrow screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 400px) {
+  .logo {
+    width: 120px; /* Even smaller width for very narrow screens */
+  }
+}
+
+/* Menu Links */
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.0400rem;
+  cursor: pointer;
+}
+
+/* Navbar list items */
+nav ul li {
+  text-transform: uppercase;
+}
+
+/* Navbar links color */
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-peach) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+/* Navbar background color (optional) */
+.navbar {
+  background-color: #182E35; /* Choose a color that contrasts with white text */
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-white);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-white);
+}
+
+/* Profile picture styling */
+/* Profile picture styling */
+.profpic {
+  position: absolute;
+  top: 10rem;
+  right: 0;
+  object-fit: cover;
+  height: 70vh;
+  z-index: 1;
+}
+
+
+/* Responsive image styling for different screen sizes */
+@media (max-width: 768px) {
+  .profpic {
+    height: 60vh;
+    top: 5rem;
+    right: -1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .profpic {
+    height: 50vh;
+    top: 3rem;
+    right: -2rem;
+  }
+}
+
+
+
+/* Content styling */
+.content {
+  background: #182E35;
+  color: #F4E0CA;
+  font-family: "Esteban", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Responsive text styling for mobile view */
+@media (max-width: 768px) {
+  .content {
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+    padding: 1.5rem;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 576px) {
+  .content {
+    font-size: 2rem; /* Further reduce font size for very small screens */
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.hello {
+  color: #F4E0CA;
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 576px) {
+  .hello {
+    font-size: 1.5rem;
   }
+}
+
+.introName {
+  color: #E5A665;
 }
