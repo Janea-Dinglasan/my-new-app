@@ -70,7 +70,7 @@ nav ul li {
   top: 10rem;
   right: 0;
   object-fit: cover;
-  height: 70vh;
+  height: 60vh;
   z-index: 1;
 }
 
@@ -80,7 +80,7 @@ nav ul li {
   .profpic {
     height: 60vh;
     top: 5rem;
-    right: -1rem;
+    right: -0.5rem;
   }
 }
 
@@ -140,3 +140,59 @@ nav ul li {
 .introName {
   color: #E5A665;
 }
+
+.about-section {
+  background: #182E35; /* Background color */
+  color: #F4E0CA; /* Text color */
+  padding: 2rem; /* Padding around the section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Adding spacing */
+.spacing {
+  margin: 1.5rem 0; /* Space above and below */
+}
+
+/* Font sizes */
+.about-section h1 {
+  font-size: 3rem; /* Font size for the main heading */
+}
+
+.about-section h2 {
+  font-size: 2.5rem; /* Font size for subheadings */
+  margin-bottom: 1rem; /* Space below subheadings */
+}
+
+.about-section p {
+  font-size: 1.5rem; /* Font size for paragraphs */
+}
+
+.about-section ul {
+  font-size: 1.5rem; /* Font size for list items */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-section {
+      padding: 1.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .about-section h1 {
+      font-size: 2.5rem; /* Smaller font size for headings on mobile */
+  }
+
+  .about-section h2 {
+      font-size: 2rem; /* Smaller font size for subheadings on mobile */
+  }
+
+  .about-section p,
+  .about-section ul {
+      font-size: 1.2rem; /* Smaller font size for paragraphs and lists on mobile */
+  }
+}
+
+.introName {
+  color: #E5A665; /* Highlight color for the name */
+}
+
